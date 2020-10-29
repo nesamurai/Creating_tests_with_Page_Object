@@ -11,3 +11,10 @@ class LoginPageLocators():
 	REG_PWD = (By.CSS_SELECTOR, "id_registration_password1")
 	REG_CONFIRM = (By.CSS_SELECTOR, "id_registration_password2")
 	REG_BTN = (By.NAME, "registration_submit")
+
+class ProductPageLocators():
+	ADD_BTN = (By.CLASS_NAME, "btn-add-to-basket")
+	BASKET_TOTAL = (By.CLASS_NAME, "basket-mini")
+	ITEM_PRICE = (By.CSS_SELECTOR, "div.product_main p.price_color")
+	BOOK = (By.TAG_NAME, "h1")
+	MSG_ITEM = (By.CSS_SELECTOR, "div.alertinner > strong")
