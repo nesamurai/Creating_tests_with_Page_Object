@@ -20,8 +20,8 @@ class ProductPage(BasePage):
 	def should_be_same_cost(self):
 		purchase = self.browser.find_element(*ProductPageLocators.BASKET_TOTAL)
 		ptext = purchase.text
-		print(ptext[14:19])
+		print(ptext[14:20].strip())
 		book = self.browser.find_element(*ProductPageLocators.ITEM_PRICE)
 		price = book.text
 		print(price)
-		assert ptext[14:19] == price, "Basket total is not equal to book price"
+		assert ptext[14:20].strip() == price, "Basket total is not equal to book price"
