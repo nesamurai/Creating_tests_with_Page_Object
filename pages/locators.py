@@ -18,3 +18,8 @@ class ProductPageLocators():
 	ITEM_PRICE = (By.CSS_SELECTOR, "div.product_main p.price_color")
 	BOOK = (By.TAG_NAME, "h1")
 	MSG_ITEM = (By.CSS_SELECTOR, "div.alertinner > strong")
+	SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div.alert-success:first-child")
+
+class BasePageLocators():
+	LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+	LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
